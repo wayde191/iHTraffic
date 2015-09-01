@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B7D129F61B101FE40038C928 /* IHTFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B7D129F91B101FE40038C928 /* Build configuration list for PBXAggregateTarget "IHTFramework" */;
+			buildPhases = (
+				B7D129FA1B101FF70038C928 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = IHTFramework;
+			productName = IHTFramework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B71F22B51AF201040013EA89 /* libIHTrafficFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71F22A91AF201040013EA89 /* libIHTrafficFramework.a */; };
+		B71F22C71AF208620013EA89 /* IHTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B71F22C61AF208620013EA89 /* IHTUser.m */; };
+		B7245F2A1B0EC0AD00CBD818 /* IHTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7245F291B0EC0AD00CBD818 /* IHTUserModel.m */; };
+		B76B81B81B0B329B00579AE6 /* NetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B81B71B0B329B00579AE6 /* NetworkTests.m */; };
+		B79CBBA71B0C057E00B6E82B /* IHTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B79CBBA61B0C057E00B6E82B /* IHTTracker.m */; };
+		B7D12A0C1B1028AD0038C928 /* README in CopyFiles */ = {isa = PBXBuildFile; fileRef = B71F22C31AF201230013EA89 /* README */; };
+		B7D12A0D1B1028AD0038C928 /* IHTVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B71F22C81AF20F000013EA89 /* IHTVersion.h */; };
+		B7D12A0E1B1028AD0038C928 /* IHTHeaders.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7D129EC1B101EA30038C928 /* IHTHeaders.h */; };
+		B7D12A0F1B1028AD0038C928 /* IHTTracker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B79CBBA51B0C057E00B6E82B /* IHTTracker.h */; };
+		B7D12A101B1028AD0038C928 /* IHTNetworkMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F361AF3234900DB1451 /* IHTNetworkMonitor.h */; };
+		B7D12A111B1028AD0038C928 /* IHTReachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F381AF3234900DB1451 /* IHTReachability.h */; };
+		B7D12A121B1028AD0038C928 /* IHTRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F3A1AF3234900DB1451 /* IHTRequest.h */; };
+		B7D12A131B1028AD0038C928 /* IHTRequestProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F3C1AF3234900DB1451 /* IHTRequestProtocol.h */; };
+		B7D12A141B1028AD0038C928 /* IHTRequestResponseFailure.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F3D1AF3234900DB1451 /* IHTRequestResponseFailure.h */; };
+		B7D12A151B1028AD0038C928 /* IHTRequestResponseSuccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F3F1AF3234900DB1451 /* IHTRequestResponseSuccess.h */; };
+		B7D12A161B1028AD0038C928 /* IHTCommonMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B71F22CA1AF213E10013EA89 /* IHTCommonMacros.h */; };
+		B7D12A171B1028AD0038C928 /* IHTServices.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F331AF321BA00DB1451 /* IHTServices.h */; };
+		B7D12A181B1028AD0038C928 /* IHTLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7DE6F341AF3220B00DB1451 /* IHTLog.h */; };
+		B7D12A191B1028AD0038C928 /* IHTUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B71F22C51AF208620013EA89 /* IHTUser.h */; };
+		B7D12A1A1B1028AD0038C928 /* IHTUserModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7245F281B0EC0AD00CBD818 /* IHTUserModel.h */; };
+		B7DE6F411AF3234900DB1451 /* IHTNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6F371AF3234900DB1451 /* IHTNetworkMonitor.m */; };
+		B7DE6F421AF3234900DB1451 /* IHTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6F391AF3234900DB1451 /* IHTReachability.m */; };
+		B7DE6F431AF3234900DB1451 /* IHTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6F3B1AF3234900DB1451 /* IHTRequest.m */; };
+		B7DE6F441AF3234900DB1451 /* IHTRequestResponseFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6F3E1AF3234900DB1451 /* IHTRequestResponseFailure.m */; };
+		B7DE6F451AF3234900DB1451 /* IHTRequestResponseSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE6F401AF3234900DB1451 /* IHTRequestResponseSuccess.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B71F22B61AF201040013EA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B71F22A11AF201040013EA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B71F22A81AF201040013EA89;
+			remoteInfo = IHTrafficFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B71F22A71AF201040013EA89 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B7D12A0C1B1028AD0038C928 /* README in CopyFiles */,
+				B7D12A0D1B1028AD0038C928 /* IHTVersion.h in CopyFiles */,
+				B7D12A0E1B1028AD0038C928 /* IHTHeaders.h in CopyFiles */,
+				B7D12A0F1B1028AD0038C928 /* IHTTracker.h in CopyFiles */,
+				B7D12A101B1028AD0038C928 /* IHTNetworkMonitor.h in CopyFiles */,
+				B7D12A111B1028AD0038C928 /* IHTReachability.h in CopyFiles */,
+				B7D12A121B1028AD0038C928 /* IHTRequest.h in CopyFiles */,
+				B7D12A131B1028AD0038C928 /* IHTRequestProtocol.h in CopyFiles */,
+				B7D12A141B1028AD0038C928 /* IHTRequestResponseFailure.h in CopyFiles */,
+				B7D12A151B1028AD0038C928 /* IHTRequestResponseSuccess.h in CopyFiles */,
+				B7D12A161B1028AD0038C928 /* IHTCommonMacros.h in CopyFiles */,
+				B7D12A171B1028AD0038C928 /* IHTServices.h in CopyFiles */,
+				B7D12A181B1028AD0038C928 /* IHTLog.h in CopyFiles */,
+				B7D12A191B1028AD0038C928 /* IHTUser.h in CopyFiles */,
+				B7D12A1A1B1028AD0038C928 /* IHTUserModel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B71F22A91AF201040013EA89 /* libIHTrafficFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIHTrafficFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71F22B41AF201040013EA89 /* IHTrafficFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IHTrafficFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71F22BA1AF201040013EA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71F22C31AF201230013EA89 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		B71F22C51AF208620013EA89 /* IHTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTUser.h; sourceTree = "<group>"; };
+		B71F22C61AF208620013EA89 /* IHTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTUser.m; sourceTree = "<group>"; };
+		B71F22C81AF20F000013EA89 /* IHTVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHTVersion.h; sourceTree = "<group>"; };
+		B71F22CA1AF213E10013EA89 /* IHTCommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHTCommonMacros.h; sourceTree = "<group>"; };
+		B7245F281B0EC0AD00CBD818 /* IHTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTUserModel.h; sourceTree = "<group>"; };
+		B7245F291B0EC0AD00CBD818 /* IHTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTUserModel.m; sourceTree = "<group>"; };
+		B76B81B71B0B329B00579AE6 /* NetworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTests.m; sourceTree = "<group>"; };
+		B79CBBA51B0C057E00B6E82B /* IHTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTTracker.h; sourceTree = "<group>"; };
+		B79CBBA61B0C057E00B6E82B /* IHTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTTracker.m; sourceTree = "<group>"; };
+		B7D129EC1B101EA30038C928 /* IHTHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHTHeaders.h; sourceTree = "<group>"; };
+		B7DE6F331AF321BA00DB1451 /* IHTServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHTServices.h; sourceTree = "<group>"; };
+		B7DE6F341AF3220B00DB1451 /* IHTLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHTLog.h; sourceTree = "<group>"; };
+		B7DE6F361AF3234900DB1451 /* IHTNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTNetworkMonitor.h; sourceTree = "<group>"; };
+		B7DE6F371AF3234900DB1451 /* IHTNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTNetworkMonitor.m; sourceTree = "<group>"; };
+		B7DE6F381AF3234900DB1451 /* IHTReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTReachability.h; sourceTree = "<group>"; };
+		B7DE6F391AF3234900DB1451 /* IHTReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTReachability.m; sourceTree = "<group>"; };
+		B7DE6F3A1AF3234900DB1451 /* IHTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTRequest.h; sourceTree = "<group>"; };
+		B7DE6F3B1AF3234900DB1451 /* IHTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTRequest.m; sourceTree = "<group>"; };
+		B7DE6F3C1AF3234900DB1451 /* IHTRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTRequestProtocol.h; sourceTree = "<group>"; };
+		B7DE6F3D1AF3234900DB1451 /* IHTRequestResponseFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTRequestResponseFailure.h; sourceTree = "<group>"; };
+		B7DE6F3E1AF3234900DB1451 /* IHTRequestResponseFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTRequestResponseFailure.m; sourceTree = "<group>"; };
+		B7DE6F3F1AF3234900DB1451 /* IHTRequestResponseSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTRequestResponseSuccess.h; sourceTree = "<group>"; };
+		B7DE6F401AF3234900DB1451 /* IHTRequestResponseSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTRequestResponseSuccess.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B71F22A61AF201040013EA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B71F22B11AF201040013EA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71F22B51AF201040013EA89 /* libIHTrafficFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B71F22A01AF201040013EA89 = {
+			isa = PBXGroup;
+			children = (
+				B71F22AB1AF201040013EA89 /* IHTrafficFramework */,
+				B71F22B81AF201040013EA89 /* IHTrafficFrameworkTests */,
+				B71F22AA1AF201040013EA89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B71F22AA1AF201040013EA89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22A91AF201040013EA89 /* libIHTrafficFramework.a */,
+				B71F22B41AF201040013EA89 /* IHTrafficFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B71F22AB1AF201040013EA89 /* IHTrafficFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22C31AF201230013EA89 /* README */,
+				B71F22C81AF20F000013EA89 /* IHTVersion.h */,
+				B7D129EC1B101EA30038C928 /* IHTHeaders.h */,
+				B79CBBA41B0C053300B6E82B /* Tracker */,
+				B7DE6F351AF3234900DB1451 /* Network */,
+				B71F22C91AF213640013EA89 /* Macros */,
+				B71F22C41AF208460013EA89 /* User */,
+			);
+			path = IHTrafficFramework;
+			sourceTree = "<group>";
+		};
+		B71F22B81AF201040013EA89 /* IHTrafficFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22B91AF201040013EA89 /* Supporting Files */,
+				B76B81B71B0B329B00579AE6 /* NetworkTests.m */,
+			);
+			path = IHTrafficFrameworkTests;
+			sourceTree = "<group>";
+		};
+		B71F22B91AF201040013EA89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22BA1AF201040013EA89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B71F22C41AF208460013EA89 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22C51AF208620013EA89 /* IHTUser.h */,
+				B71F22C61AF208620013EA89 /* IHTUser.m */,
+				B7245F281B0EC0AD00CBD818 /* IHTUserModel.h */,
+				B7245F291B0EC0AD00CBD818 /* IHTUserModel.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B71F22C91AF213640013EA89 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				B71F22CA1AF213E10013EA89 /* IHTCommonMacros.h */,
+				B7DE6F331AF321BA00DB1451 /* IHTServices.h */,
+				B7DE6F341AF3220B00DB1451 /* IHTLog.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		B79CBBA41B0C053300B6E82B /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				B79CBBA51B0C057E00B6E82B /* IHTTracker.h */,
+				B79CBBA61B0C057E00B6E82B /* IHTTracker.m */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		B7DE6F351AF3234900DB1451 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B7DE6F361AF3234900DB1451 /* IHTNetworkMonitor.h */,
+				B7DE6F371AF3234900DB1451 /* IHTNetworkMonitor.m */,
+				B7DE6F381AF3234900DB1451 /* IHTReachability.h */,
+				B7DE6F391AF3234900DB1451 /* IHTReachability.m */,
+				B7DE6F3A1AF3234900DB1451 /* IHTRequest.h */,
+				B7DE6F3B1AF3234900DB1451 /* IHTRequest.m */,
+				B7DE6F3C1AF3234900DB1451 /* IHTRequestProtocol.h */,
+				B7DE6F3D1AF3234900DB1451 /* IHTRequestResponseFailure.h */,
+				B7DE6F3E1AF3234900DB1451 /* IHTRequestResponseFailure.m */,
+				B7DE6F3F1AF3234900DB1451 /* IHTRequestResponseSuccess.h */,
+				B7DE6F401AF3234900DB1451 /* IHTRequestResponseSuccess.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B71F22A81AF201040013EA89 /* IHTrafficFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71F22BD1AF201040013EA89 /* Build configuration list for PBXNativeTarget "IHTrafficFramework" */;
+			buildPhases = (
+				B71F22A51AF201040013EA89 /* Sources */,
+				B71F22A61AF201040013EA89 /* Frameworks */,
+				B71F22A71AF201040013EA89 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IHTrafficFramework;
+			productName = IHTrafficFramework;
+			productReference = B71F22A91AF201040013EA89 /* libIHTrafficFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B71F22B31AF201040013EA89 /* IHTrafficFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71F22C01AF201040013EA89 /* Build configuration list for PBXNativeTarget "IHTrafficFrameworkTests" */;
+			buildPhases = (
+				B71F22B01AF201040013EA89 /* Sources */,
+				B71F22B11AF201040013EA89 /* Frameworks */,
+				B71F22B21AF201040013EA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B71F22B71AF201040013EA89 /* PBXTargetDependency */,
+			);
+			name = IHTrafficFrameworkTests;
+			productName = IHTrafficFrameworkTests;
+			productReference = B71F22B41AF201040013EA89 /* IHTrafficFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B71F22A11AF201040013EA89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = iHakula;
+				TargetAttributes = {
+					B71F22A81AF201040013EA89 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B71F22B31AF201040013EA89 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B7D129F61B101FE40038C928 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = B71F22A41AF201040013EA89 /* Build configuration list for PBXProject "IHTrafficFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B71F22A01AF201040013EA89;
+			productRefGroup = B71F22AA1AF201040013EA89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B71F22A81AF201040013EA89 /* IHTrafficFramework */,
+				B71F22B31AF201040013EA89 /* IHTrafficFrameworkTests */,
+				B7D129F61B101FE40038C928 /* IHTFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B71F22B21AF201040013EA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7D129FA1B101FF70038C928 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target IHTFramework ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target IHTFramework -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B71F22A51AF201040013EA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79CBBA71B0C057E00B6E82B /* IHTTracker.m in Sources */,
+				B7DE6F431AF3234900DB1451 /* IHTRequest.m in Sources */,
+				B71F22C71AF208620013EA89 /* IHTUser.m in Sources */,
+				B7DE6F411AF3234900DB1451 /* IHTNetworkMonitor.m in Sources */,
+				B7DE6F421AF3234900DB1451 /* IHTReachability.m in Sources */,
+				B7DE6F451AF3234900DB1451 /* IHTRequestResponseSuccess.m in Sources */,
+				B7245F2A1B0EC0AD00CBD818 /* IHTUserModel.m in Sources */,
+				B7DE6F441AF3234900DB1451 /* IHTRequestResponseFailure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B71F22B01AF201040013EA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76B81B81B0B329B00579AE6 /* NetworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B71F22B71AF201040013EA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B71F22A81AF201040013EA89 /* IHTrafficFramework */;
+			targetProxy = B71F22B61AF201040013EA89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B71F22BB1AF201040013EA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B71F22BC1AF201040013EA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B71F22BE1AF201040013EA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B71F22BF1AF201040013EA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B71F22C11AF201040013EA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IHTrafficFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B71F22C21AF201040013EA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IHTrafficFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7D129F71B101FE40038C928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7D129F81B101FE40038C928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B71F22A41AF201040013EA89 /* Build configuration list for PBXProject "IHTrafficFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71F22BB1AF201040013EA89 /* Debug */,
+				B71F22BC1AF201040013EA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71F22BD1AF201040013EA89 /* Build configuration list for PBXNativeTarget "IHTrafficFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71F22BE1AF201040013EA89 /* Debug */,
+				B71F22BF1AF201040013EA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71F22C01AF201040013EA89 /* Build configuration list for PBXNativeTarget "IHTrafficFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71F22C11AF201040013EA89 /* Debug */,
+				B71F22C21AF201040013EA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D129F91B101FE40038C928 /* Build configuration list for PBXAggregateTarget "IHTFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D129F71B101FE40038C928 /* Debug */,
+				B7D129F81B101FE40038C928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B71F22A11AF201040013EA89 /* Project object */;
+}
