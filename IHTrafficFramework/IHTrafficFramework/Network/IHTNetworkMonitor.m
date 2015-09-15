@@ -99,11 +99,11 @@ static IHTNetworkMonitor *singletonInstance = nil;
 }
 
 - (void)addObserver {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStateDidChanged:) name:kReachabilityChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStateDidChanged:) name:kIHTReachabilityChangedNotification object:nil];
 }
 
 - (void)removeObserver {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kIHTReachabilityChangedNotification object:nil];
 }
 
 #pragma mark - Class Methods
