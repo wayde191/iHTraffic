@@ -14,13 +14,17 @@ typedef enum {
     EIHTLoginStatusFailure,
     EIHTLogoutStatusSuccess,
     EIHTLogoutStatusFailure,
+    EIHTRegisterStatusSuccess,
+    EIHTRegisterStatusFailure
 }EIHTLogStatus;
 
 @interface IHTUserModel : NSObject
 
 typedef void(^LogBlockHandler)(EIHTLogStatus status, IHTUser *user);
+typedef void(^RegisterBlockHandler)(EIHTLogStatus status, NSDictionary *response);
 
 - (BOOL)doCallLoginService:(NSDictionary *)paras onCompletionHandler:(LogBlockHandler)completion;
 - (BOOL)doCallLogoutService:(NSDictionary *)paras onCompletionHandler:(LogBlockHandler)completion;
+- (BOOL)doCallRegisterService:(NSDictionary *)paras onCompletionHandler:(RegisterBlockHandler)completion;
 
 @end

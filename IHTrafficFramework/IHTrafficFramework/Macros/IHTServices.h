@@ -21,5 +21,6 @@
 #define IHT_SERVICE_TRACKER                      @"uploadTrack"
 #define IHT_SERVICE_LOGIN                        @"login"
 #define IHT_SERVICE_LOGOUT                       @"logout"
+#define IHT_SERVICE_REGISTER                     @"register"
 
 #endif
