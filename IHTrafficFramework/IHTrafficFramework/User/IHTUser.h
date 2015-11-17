@@ -25,8 +25,14 @@ typedef enum {
     
 } EIHTUserPlatform;
 
+typedef enum {
+    EIHTLoginStatePasswordNotCorrect = 909,
+    EIHTLoginStateEmailNotExist = 910,
+} EIHTLoginErrorState;
+
 @interface IHTUser : NSObject
 
+@property (nonatomic, assign) EIHTLoginErrorState loginState;
 @property (nonatomic, assign) EIHTUserRole role;
 @property (nonatomic, assign) EIHTUserPlatform platform;
 

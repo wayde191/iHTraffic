@@ -81,7 +81,7 @@ typedef enum {
         [IHT_USER_DEFAULT setObject:uuid forKey:IHT_TRACKER_UUID];
         [IHT_USER_DEFAULT synchronize];
     }
-    NSString *uid = _user ? _user.userID : @"-1";
+    NSString *uid = _user ? _user.userID : @"-1"; //TODO ERROR
     NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     appVersion = appVersion ? appVersion : @"1.0";
     

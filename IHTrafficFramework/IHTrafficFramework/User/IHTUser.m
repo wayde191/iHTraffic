@@ -27,15 +27,20 @@
     self = [self init];
     if (self) {
         self.userDic = userDataDic;
-        
-        self.userID = userDataDic[@"id"];
-        self.email = userDataDic[@"email"];
-        self.avatar = userDataDic[@"avatar"];
-        self.username = userDataDic[@"name"];
-        self.platform = (EIHTUserPlatform)userDataDic[@"platform"];
-        self.phoneNumber = userDataDic[@"phone"];
-        self.role = (EIHTUserRole)userDataDic[@"role"];
-        self.sex = userDataDic[@"sex"];
+        self.userID = @"-1";
+        self.loginState = (EIHTLoginErrorState)[userDataDic[@"errorCode"] intValue];
+        if (!_loginState) {
+            NSDictionary *user = userDataDic[@"user"];
+            
+            self.userID = user[@"id"] ? user[@"id"] : @"-1";
+            self.email = user[@"email"];
+            self.avatar = user[@"avatar"];
+            self.username = user[@"name"];
+            self.platform = (EIHTUserPlatform)[user[@"platform"] intValue];
+            self.phoneNumber = user[@"phone"];
+            self.role = (EIHTUserRole)[user[@"role"] intValue];
+            self.sex = user[@"sex"];
+        }
     }
     return self;
 }

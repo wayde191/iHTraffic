@@ -87,9 +87,13 @@
                                        break;
                                    case ERequestingFinished:
                                    {
-                                       IHTUser *user = [[IHTUser alloc] initWithUserDic:responseSuccess.userInfo[@"data"][@"user"]];
+                                       IHTUser *user = [[IHTUser alloc] initWithUserDic:responseSuccess.userInfo[@"data"]];
                                        [IHTTracker trackUser:user];
-                                       completion(EIHTLoginStatusSuccess, user);
+                                       if (user.loginState) {
+                                           completion(EIHTLoginStatusFailure, user);
+                                       } else {
+                                           completion(EIHTLoginStatusSuccess, user);
+                                       }
                                    }
                                        break;
                                    case ERequestingFailed:
