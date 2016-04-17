@@ -22,5 +22,6 @@
 #define IHT_SERVICE_LOGIN                        @"login"
 #define IHT_SERVICE_LOGOUT                       @"logout"
 #define IHT_SERVICE_REGISTER                     @"register"
+#define IHT_SERVICE_FEEDBACK                     @"feedback"
 
 #endif

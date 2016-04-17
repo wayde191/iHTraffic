@@ -18,8 +18,55 @@
 #define IHT_USER_LOGIN_SERVICE          @"IHTUserLoginService"
 #define IHT_USER_LOGOUT_SERVICE         @"IHTUserLogoutService"
 #define IHT_USER_REGISTER_SERVICE       @"IHTUserRegisterService"
+#define IHT_USER_FEEDBACK_SERVICE       @"IHTUserFeedbackService"
 
 @implementation IHTUserModel
+
+- (BOOL)doCallFeedbackService:(NSDictionary *)paras onCompletionHandler:(UserBlockHandler)completion {
+    __block BOOL responseHasArrived = NO;
+    IHTRequest *request = [IHTRequest
+                           requestWithName:IHT_USER_FEEDBACK_SERVICE
+                           forServiceUrl:IHT_SERVICE_FEEDBACK
+                           withRequestBlock:^(IHTRequest *request, ERequestingStatus requestingStatus, IHTRequestResponseSuccess *responseSuccess, IHTRequestResponseFailure *responseFailed) {
+                               
+                               responseHasArrived = YES;
+                               dispatch_async(dispatch_get_main_queue(), ^{
+                                   switch (requestingStatus) {
+                                       case ERequestingStarted:
+                                           //TODO
+                                           break;
+                                       case ERequestingFinished:
+                                       {
+                                           completion(EIHTFeedbackStatusSuccess);
+                                       }
+                                           break;
+                                       case ERequestingFailed:
+                                           completion(EIHTFeedbackStatusFailure);
+                                           break;
+                                       case ERequestingCanceled:
+                                           //TODO
+                                           break;
+                                           
+                                       default:
+                                           break;
+                                   }
+                               });
+                           }];
+    
+    NSMutableDictionary *mutParas = [NSMutableDictionary dictionaryWithDictionary:paras];
+    [mutParas setObject:IHT_TRACKER_SCODE forKey:@"sCode"];
+    [request startWithParameters:mutParas
+                 byRequestMethod:ERequestMethodPost];
+    
+#if IHT_APP_PRODUCTION_ENVIRONMENT == 0
+    NSDate *timeoutDate = [NSDate dateWithTimeIntervalSinceNow:5.0];
+    while (responseHasArrived == NO && ([timeoutDate timeIntervalSinceNow] > 0)) {
+        CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, YES);
+    }
+#endif
+    
+    return responseHasArrived;
+}
 
 - (BOOL)doCallRegisterService:(NSDictionary *)paras onCompletionHandler:(RegisterBlockHandler)completion {
     
